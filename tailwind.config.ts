@@ -63,7 +63,7 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))"
         },
-        // Custom TDP colors
+        // Custom TDP colors with ETH-inspired palette
         tdp: {
           white: "#FFFFFF",
           "light-gray": "#E5E7EB",
@@ -71,11 +71,25 @@ export default {
           yellow: "#FFC107",
           red: "#EF4444",
           "dark-navy": "#1E3A8A",
-          green: "#10B981"
+          green: "#10B981",
+          // New ETH-inspired colors
+          pastel: {
+            pink: "#FFC2D1",
+            blue: "#A5C7FF",
+            purple: "#D6BCFA",
+            mint: "#C2FFD1"
+          },
+          eth: {
+            purple: "#627EEA",
+            lightblue: "#6BA4FF",
+            mint: "#7FFFD4"
+          }
         }
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        cabinet: ['"Cabinet Grotesk"', "sans-serif"],
+        sentient: ['"Sentient"', "serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -102,6 +116,10 @@ export default {
         "pulse-accent": {
           "0%, 100%": { opacity: "1" },
           "50%": { opacity: "0.7" }
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" }
         }
       },
       animation: {
@@ -109,7 +127,8 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.5s ease-out forwards",
         "diagonal-progress": "diagonal-progress 1s ease-out forwards",
-        "pulse-accent": "pulse-accent 2s infinite"
+        "pulse-accent": "pulse-accent 2s infinite",
+        "float": "float 6s ease-in-out infinite"
       }
     }
   },
