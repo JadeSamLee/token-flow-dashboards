@@ -82,7 +82,7 @@ const Projects = () => {
             <h1 className="text-2xl font-bold diagonal-line inline-block pb-2">
               Explore Projects
             </h1>
-            <p className="text-tdp-dark-gray mt-2">
+            <p className="text-vp-black mt-2">
               Discover and fund innovative blockchain projects from around the world.
             </p>
           </div>
@@ -92,8 +92,8 @@ const Projects = () => {
               onClick={() => setActiveFilter("all")}
               className={`px-4 py-2 rounded-full text-sm ${
                 activeFilter === "all"
-                  ? "bg-gradient-to-r from-tdp-eth-purple to-tdp-eth-mint text-white"
-                  : "bg-white border border-tdp-light-gray text-tdp-dark-gray hover:border-tdp-eth-mint"
+                  ? "bg-vp-green text-white"
+                  : "bg-white border border-vp-green text-vp-black hover:bg-vp-light-green"
               } transition-colors`}
             >
               All Projects
@@ -102,8 +102,8 @@ const Projects = () => {
               onClick={() => setActiveFilter("active")}
               className={`px-4 py-2 rounded-full text-sm ${
                 activeFilter === "active"
-                  ? "bg-gradient-to-r from-tdp-eth-purple to-tdp-eth-mint text-white"
-                  : "bg-white border border-tdp-light-gray text-tdp-dark-gray hover:border-tdp-eth-mint"
+                  ? "bg-vp-green text-white"
+                  : "bg-white border border-vp-green text-vp-black hover:bg-vp-light-green"
               } transition-colors`}
             >
               Active
@@ -112,8 +112,8 @@ const Projects = () => {
               onClick={() => setActiveFilter("completed")}
               className={`px-4 py-2 rounded-full text-sm ${
                 activeFilter === "completed"
-                  ? "bg-gradient-to-r from-tdp-eth-purple to-tdp-eth-mint text-white"
-                  : "bg-white border border-tdp-light-gray text-tdp-dark-gray hover:border-tdp-eth-mint"
+                  ? "bg-vp-green text-white"
+                  : "bg-white border border-vp-green text-vp-black hover:bg-vp-light-green"
               } transition-colors`}
             >
               Completed
@@ -122,8 +122,8 @@ const Projects = () => {
               onClick={() => setActiveFilter("top-funded")}
               className={`px-4 py-2 rounded-full text-sm ${
                 activeFilter === "top-funded"
-                  ? "bg-gradient-to-r from-tdp-eth-purple to-tdp-eth-mint text-white"
-                  : "bg-white border border-tdp-light-gray text-tdp-dark-gray hover:border-tdp-eth-mint"
+                  ? "bg-vp-green text-white"
+                  : "bg-white border border-vp-green text-vp-black hover:bg-vp-light-green"
               } transition-colors`}
             >
               Top Funded

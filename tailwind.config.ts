@@ -63,27 +63,13 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))"
         },
-        // Custom TDP colors with ETH-inspired palette
-        tdp: {
+        // Custom Venture Protocol colors
+        vp: {
           white: "#FFFFFF",
-          "light-gray": "#E5E7EB",
-          "dark-gray": "#4B5563",
-          yellow: "#FFC107",
-          red: "#EF4444",
-          "dark-navy": "#1E3A8A",
+          black: "#000000",
           green: "#10B981",
-          // New ETH-inspired colors
-          pastel: {
-            pink: "#FFC2D1",
-            blue: "#A5C7FF",
-            purple: "#D6BCFA",
-            mint: "#C2FFD1"
-          },
-          eth: {
-            purple: "#627EEA",
-            lightblue: "#6BA4FF",
-            mint: "#7FFFD4"
-          }
+          "dark-green": "#059669",
+          "light-green": "#D1FAE5",
         }
       },
       fontFamily: {
