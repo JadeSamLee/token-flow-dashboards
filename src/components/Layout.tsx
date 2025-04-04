@@ -25,14 +25,14 @@ const Layout = ({ children }: LayoutProps) => {
   }
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen pastel-pattern-bg">
       <Header toggleSidebar={toggleSidebar} isSidebarOpen={isSidebarOpen} />
       
       <div className="flex flex-1 relative">
         <Sidebar isOpen={isSidebarOpen} />
         
         <main
-          className={`flex-1 transition-all duration-300 bg-gradient-to-br from-white to-tdp-pastel-blue/5 ${
+          className={`flex-1 transition-all duration-300 ${
             isSidebarOpen ? "lg:ml-0" : "lg:ml-0"
           }`}
         >

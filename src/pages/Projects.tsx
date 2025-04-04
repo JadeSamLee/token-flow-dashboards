@@ -3,6 +3,7 @@ import { useState } from "react";
 import Layout from "../components/Layout";
 import ProjectCard from "../components/ProjectCard";
 import TableOfContents from "../components/TableOfContents";
+import { Badge } from "@/components/ui/badge";
 
 // Mock data for projects
 const projectsData = [
@@ -91,8 +92,8 @@ const Projects = () => {
               onClick={() => setActiveFilter("all")}
               className={`px-4 py-2 rounded-full text-sm ${
                 activeFilter === "all"
-                  ? "bg-tdp-yellow text-tdp-dark-navy"
-                  : "bg-tdp-light-gray text-tdp-dark-gray hover:bg-tdp-light-gray/70"
+                  ? "bg-gradient-to-r from-tdp-eth-purple to-tdp-eth-mint text-white"
+                  : "bg-white border border-tdp-light-gray text-tdp-dark-gray hover:border-tdp-eth-mint"
               } transition-colors`}
             >
               All Projects
@@ -101,8 +102,8 @@ const Projects = () => {
               onClick={() => setActiveFilter("active")}
               className={`px-4 py-2 rounded-full text-sm ${
                 activeFilter === "active"
-                  ? "bg-tdp-yellow text-tdp-dark-navy"
-                  : "bg-tdp-light-gray text-tdp-dark-gray hover:bg-tdp-light-gray/70"
+                  ? "bg-gradient-to-r from-tdp-eth-purple to-tdp-eth-mint text-white"
+                  : "bg-white border border-tdp-light-gray text-tdp-dark-gray hover:border-tdp-eth-mint"
               } transition-colors`}
             >
               Active
@@ -111,8 +112,8 @@ const Projects = () => {
               onClick={() => setActiveFilter("completed")}
               className={`px-4 py-2 rounded-full text-sm ${
                 activeFilter === "completed"
-                  ? "bg-tdp-yellow text-tdp-dark-navy"
-                  : "bg-tdp-light-gray text-tdp-dark-gray hover:bg-tdp-light-gray/70"
+                  ? "bg-gradient-to-r from-tdp-eth-purple to-tdp-eth-mint text-white"
+                  : "bg-white border border-tdp-light-gray text-tdp-dark-gray hover:border-tdp-eth-mint"
               } transition-colors`}
             >
               Completed
@@ -121,8 +122,8 @@ const Projects = () => {
               onClick={() => setActiveFilter("top-funded")}
               className={`px-4 py-2 rounded-full text-sm ${
                 activeFilter === "top-funded"
-                  ? "bg-tdp-yellow text-tdp-dark-navy"
-                  : "bg-tdp-light-gray text-tdp-dark-gray hover:bg-tdp-light-gray/70"
+                  ? "bg-gradient-to-r from-tdp-eth-purple to-tdp-eth-mint text-white"
+                  : "bg-white border border-tdp-light-gray text-tdp-dark-gray hover:border-tdp-eth-mint"
               } transition-colors`}
             >
               Top Funded
