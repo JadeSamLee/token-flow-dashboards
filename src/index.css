@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,19 +38,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -96,6 +92,56 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+  }
+
+  h1 {
+    @apply text-2xl font-bold;
+  }
+
+  h2 {
+    @apply text-lg font-bold;
+  }
+}
+
+@layer components {
+  .tdp-underline-red {
+    @apply relative inline-block;
+  }
+  
+  .tdp-underline-red:after {
+    @apply content-[''] absolute left-0 bottom-0 h-0.5 w-0 bg-tdp-red transition-all duration-300;
+  }
+  
+  .tdp-underline-red:hover:after {
+    @apply w-full;
+  }
+  
+  .tdp-underline-yellow {
+    @apply relative inline-block;
+  }
+  
+  .tdp-underline-yellow:after {
+    @apply content-[''] absolute left-0 bottom-0 h-0.5 w-0 bg-tdp-yellow transition-all duration-300;
+  }
+  
+  .tdp-underline-yellow:hover:after {
+    @apply w-full;
+  }
+  
+  .diagonal-line {
+    @apply relative overflow-hidden;
+  }
+  
+  .diagonal-line:after {
+    @apply content-[''] absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-tdp-yellow to-tdp-red transform origin-bottom-left -translate-y-0 rotate-3 animate-diagonal-progress;
+  }
+  
+  .progress-bar {
+    @apply h-2 rounded-full bg-tdp-light-gray overflow-hidden relative;
+  }
+  
+  .progress-bar-fill {
+    @apply h-full bg-gradient-to-r from-tdp-yellow to-tdp-red rounded-full transition-all duration-500;
   }
 }
